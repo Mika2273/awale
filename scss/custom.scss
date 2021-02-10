@@ -1,0 +1,96 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$primary_1: #ecf2f3;
+$primary_2: #0f0e01;
+$danger:rgba(228, 13, 13, 0.918);
+$myFont: Helvetica, sans-serif;
+$circleSize:10vw;
+$circleColor:rgb(107, 64, 29);
+$circleBorderColor:rgb(255, 255, 255);
+$circleFontSize: 5.5rem;
+$myWidth: 680px;
+
+body{
+    background-image: url("../img/africa.jpg");
+    color: $primary_1 ;
+}
+.containerS{
+    width: 20%;
+    margin: auto;
+}
+.title{
+    background-color: $primary_2;
+    border-radius: 10px; 
+}
+.circle{
+    width: $circleSize;
+    height: $circleSize;
+    background-image: url("../img/blue.jpg");
+    border-radius: 50%;
+    font-size: $circleFontSize;
+    text-align: center;
+}
+.player1_on{
+    &:hover {
+        border: 5px solid $circleBorderColor;
+    }
+}
+.player1_off{
+    &:hover {
+        border: none;
+    }
+}
+.player2_on{
+    &:hover {
+        border: 5px solid $circleBorderColor;
+    }
+}
+.player2_off{
+    &:hover {
+        border: none;
+    }
+}
+.tray1{
+    .circle{
+        background-image: url("../img/blue.jpg");
+    }
+}
+.tray2{
+    .circle{
+        background-image: url("../img/red.jpg");
+    }
+}
+.space{
+    height: 20px;
+}
+
+// h1 {
+//     $myColor: green;
+//     color: $myColor;
+//   }
+  
+//   p {
+//     color: $myColor;
+//   }
+
+//  nav {
+//     ul {
+//       margin: 0;
+//       padding: 0;
+//       list-style: none;
+//     }
+//     li {
+//       display: inline-block;
+//     }
+//     a {
+//       display: block;
+//       padding: 6px 12px;
+//       text-decoration: none;
+//     }
+//   }
+
+//   font: {
+//     family: Helvetica, sans-serif;
+//     size: 18px;
+//     weight: bold;
+//   }  
