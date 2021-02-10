@@ -1,7 +1,7 @@
 import { click } from './click.js';
 import { hoverOn, hoverOff } from './hoverCntl.js';
-import { backUp, starved } from './index.js';
-
+import { backUp, starved, total } from './starved.js';
+import { end } from './end.js';
 
 export function addScore1(advancedCircleNum){ 
   let $score1 = document.getElementById('score1').textContent;
@@ -21,20 +21,26 @@ export function addScore1(advancedCircleNum){
 		advancedCircleNum--;
   }
 	if(starved(1)==false){
-		hoverOff('player1');
-		hoverOn('player2');
-		let players2 = document.getElementsByClassName('player2') 
-		for(let i=0 ; i < 6 ; i++){
-			if(players2[i].textContent !== "0"){
-				players2[i].addEventListener("click",click);
+		console.log("p1");
+		console.log(total());
+		if (total()>40){
+			hoverOff('player1');
+			hoverOn('player2');
+			let players2 = document.getElementsByClassName('player2') 
+			for(let i=0 ; i < 6 ; i++){
+				if(players2[i].textContent !== "0"){
+					players2[i].addEventListener("click",click);
+				}
 			}
+			let players1 = document.getElementsByClassName('player1') 
+			for(let i=0 ; i < 6 ; i++){
+					players1[i].removeEventListener("click",click);
+			}
+			document.querySelector('#p1Board').style.border = "none";
+			document.querySelector('#p2Board').style.border = "thick solid #0000FF";
+		}else{
+			end();
 		}
-		let players1 = document.getElementsByClassName('player1') 
-		for(let i=0 ; i < 6 ; i++){
-				players1[i].removeEventListener("click",click);
-		}
-		document.querySelector('#p1Board').style.border = "none";
-		document.querySelector('#p2Board').style.border = "thick solid #0000FF";
 	}else{
     for(let i = 1; i <= 12 ; i++){
       document.getElementById (`circle${i}`).innerHTML = table[i];
