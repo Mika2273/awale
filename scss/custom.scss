@@ -5,14 +5,16 @@ $primary_2: #0f0e01;
 $danger:rgba(228, 13, 13, 0.918);
 $myFont: Helvetica, sans-serif;
 $circleSize:10vw;
-$circleColor:rgb(107, 64, 29);
 $circleBorderColor:rgb(255, 255, 255);
 $circleFontSize: 5.5rem;
-$myWidth: 680px;
-
+$myWidth: 740px;
 body{
-    background-image: url("../img/africa.jpg");
+    background-image: url("../img/brick.jpg");
     color: $primary_1 ;
+	@media only screen and (max-width: $myWidth) {
+		transform:rotate(90deg);
+        margin-left: 10%;
+	}
 }
 .containerS{
     width: 20%;
