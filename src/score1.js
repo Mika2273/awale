@@ -21,8 +21,6 @@ export function addScore1(advancedCircleNum){
 		advancedCircleNum--;
   }
 	if(starved(1)==false){
-		console.log("p1");
-		console.log(total());
 		if (total()>40){
 			hoverOff('player1');
 			hoverOn('player2');

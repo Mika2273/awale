@@ -11,7 +11,6 @@ export function starved(player) {
     for(let i = 7;  i <= 12; i++){
       total2 += Number(document.getElementById(`circle${i}`).textContent);
     }
-    console.log("total2="+total2);
     if (total2 > 0){
       return false;
     }else{
@@ -22,7 +21,6 @@ export function starved(player) {
     for(let i = 1; i <= 6 ; i++){
       total1 += Number(document.getElementById(`circle${i}`).textContent);
     }
-    console.log("total1="+total1);
     if (total1 > 0){
       return false;
     }else{

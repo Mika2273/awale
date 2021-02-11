@@ -10,7 +10,7 @@ $(document).ready(function(){
 $('#inputModal').modal({
 	backdrop: 'static',
 	keyboard: false  // to prevent closing with Esc button (if you want this too)
-})
+});
 
 $('#inputModal').on('click','#start', function (e) {
 	let p1 = $('#player1').val();
