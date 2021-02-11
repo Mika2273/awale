@@ -19,8 +19,12 @@ body{
 	// }
 }
 .containerS{
-    width: 20%;
+    width: 30vw;
     margin: auto;
+    @media only screen and (max-width: $mobile) {
+        width: 80vw;
+     }
+
 }
 .title{
     background-color: $primary_2;
@@ -33,6 +37,9 @@ body{
     border-radius: 50%;
     font-size: $circleFontSizeL;
     text-align: center;
+    @media only screen and (max-width: $mobile) {
+        height: $circleSize * 2;
+     }
 }
 .player1, .player2{
     @media only screen and (max-width: $mobile) {
