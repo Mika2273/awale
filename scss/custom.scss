@@ -6,15 +6,17 @@ $danger:rgba(228, 13, 13, 0.918);
 $myFont: Helvetica, sans-serif;
 $circleSize:10vw;
 $circleBorderColor:rgb(255, 255, 255);
-$circleFontSize: 5.5rem;
-$myWidth: 740px;
+$circleFontSizeL: 5rem;
+$circleFontSizeM: 4rem;
+$circleFontSizeS: 2rem;
+$mobile: 768px;
+$medium:1200px;
 body{
     background-image: url("../img/brick.jpg");
     color: $primary_1 ;
-	@media only screen and (max-width: $myWidth) {
-		transform:rotate(90deg);
-        margin-left: 10%;
-	}
+	// @media only screen and (max-width: $mobile) {
+	// 	transform:rotate(90deg);
+	// }
 }
 .containerS{
     width: 20%;
@@ -29,7 +31,7 @@ body{
     height: $circleSize;
     background-image: url("../img/blue.jpg");
     border-radius: 50%;
-    font-size: $circleFontSize;
+    font-size: $circleFontSizeL;
     text-align: center;
 }
 .player1_on{
@@ -62,6 +64,14 @@ body{
         background-image: url("../img/red.jpg");
     }
 }
+// .player1{
+//     @media only screen and (max-width: $mobile) {
+//         font-size: $circleFontSizeS;
+//      }
+//      @media only screen and (max-width: $medium) {
+//          font-size: $circleFontSizeM;
+//      }
+// }
 .space{
     height: 20px;
 }
