@@ -38,6 +38,7 @@ body{
     font-size: $circleFontSizeL;
     text-align: center;
     @media only screen and (max-width: $mobile) {
+        width: $circleSize *2;
         height: $circleSize * 2;
      }
 }
