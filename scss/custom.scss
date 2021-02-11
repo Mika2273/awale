@@ -8,7 +8,7 @@ $circleSize:10vw;
 $circleBorderColor:rgb(255, 255, 255);
 $circleFontSizeL: 5rem;
 $circleFontSizeM: 4rem;
-$circleFontSizeS: 2rem;
+$circleFontSizeS: 1rem;
 $mobile: 768px;
 $medium:1200px;
 body{
@@ -33,6 +33,14 @@ body{
     border-radius: 50%;
     font-size: $circleFontSizeL;
     text-align: center;
+}
+.player1, .player2{
+    @media only screen and (max-width: $mobile) {
+        font-size: $circleFontSizeS;
+     }
+    @media only screen and (max-width: $medium) {
+         font-size: $circleFontSizeM;
+     }
 }
 .player1_on{
     &:hover {
