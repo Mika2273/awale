@@ -43,7 +43,7 @@ export function addScore1(advancedCircleNum){
 		}
 	}else{
     for(let i = 1; i <= 12 ; i++){
-      document.getElementById (`circle${i}`).innerHTML = table[i];
+      document.getElementById (`winner`).innerHTML = table[i];
     }
     document.getElementById('score1').innerHTML = backUpScore; 
 	}
