@@ -39,8 +39,8 @@ body{
     font-size: $circleFontSizeL;
     text-align: center;
     @media only screen and (max-width: $mobile) {
-        width: $circleSize *2;
-        height: $circleSize * 2;
+        width: $circleSize *1.6;
+        height: $circleSize *2;
      }
 }
 .player1, .player2{
