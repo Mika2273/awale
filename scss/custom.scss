@@ -1,4 +1,6 @@
+// @import "~bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 
 $primary_1: #ecf2f3;
 $primary_2: #0f0e01;
@@ -11,12 +13,12 @@ $circleFontSizeM: 4rem;
 $circleFontSizeS: 1rem;
 $mobile: 768px;
 $medium:1200px;
+$bg:url("../img/brick.jpg");
+$bgCirclePath1:url("../img/blue.jpg");
+$bgCirclePath2:url("../img/red.jpg");
 body{
-    background-image: url("../img/brick.jpg");
+    background-image: $bg;
     color: $primary_1 ;
-	// @media only screen and (max-width: $mobile) {
-	// 	transform:rotate(90deg);
-	// }
 }
 .containerS{
     width: 30vw;
@@ -33,7 +35,6 @@ body{
 .circle{
     width: $circleSize;
     height: $circleSize;
-    background-image: url("../img/blue.jpg");
     border-radius: 50%;
     font-size: $circleFontSizeL;
     text-align: center;
@@ -72,56 +73,25 @@ body{
 }
 .tray1{
     .circle{
-        background-image: url("../img/blue.jpg");
+       background-image: $bgCirclePath1;
     }
 }
 .tray2{
     .circle{
-        background-image: url("../img/red.jpg");
+       background-image: $bgCirclePath2;
     }
 }
-// .player1{
-//     @media only screen and (max-width: $mobile) {
-//         font-size: $circleFontSizeS;
-//      }
-//      @media only screen and (max-width: $medium) {
-//          font-size: $circleFontSizeM;
-//      }
-// }
+.player1{
+    @media only screen and (max-width: $mobile) {
+        font-size: $circleFontSizeS;
+     }
+     @media only screen and (max-width: $medium) {
+         font-size: $circleFontSizeM;
+     }
+}
 .space{
     height: 20px;
 }
 #trophy{
     width: 10vw;
 }
-
-// h1 {
-//     $myColor: green;
-//     color: $myColor;
-//   }
-  
-//   p {
-//     color: $myColor;
-//   }
-
-//  nav {
-//     ul {
-//       margin: 0;
-//       padding: 0;
-//       list-style: none;
-//     }
-//     li {
-//       display: inline-block;
-//     }
-//     a {
-//       display: block;
-//       padding: 6px 12px;
-//       text-decoration: none;
-//     }
-//   }
-
-//   font: {
-//     family: Helvetica, sans-serif;
-//     size: 18px;
-//     weight: bold;
-//   }  

@@ -1,3 +1,5 @@
+import 'bootstrap';
+import '../scss/custom.scss'
 import { start } from './start.js';
 import { hoverOn, hoverOff } from './hoverCntl.js';
 import { holeclick, control } from './click.js';
