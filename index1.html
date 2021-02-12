@@ -49,7 +49,7 @@
   </div>
 
 
-<div id="inputModal" class="modal fade">
+<div class="modal fade" id="inputModal" >
 	<div class="modal-dialog">
 		<div class="modal-content bg-dark text-light text-center">
 			<div class="modal-body">
@@ -63,6 +63,7 @@
 						<p>Player Name 2</p>
 							<input type="text" class="form-control" id="player2">
 					</div>
+					<button type="button" class="btn btn-secondary" id="rule" class="close" data-dismiss="modal">The Rules</button>
 					<button type="button" class="btn btn-primary" id="start" class="close" data-dismiss="modal">Start</button>
 			</form>
 			</div>
@@ -70,23 +71,29 @@
 	</div>
 </div>
 
-<div class="modal fade" id="endModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="endModal" >
   <div class="modal-dialog modal-dialog-centered ">
-    <div class="modal-content text-center text-light">
-      <h1 class="modal-title bg-dark" id="staticBackdropLabel"><span id="s1"></span>
-        <span> : </span><span id="s2"></span></h1>
-      
-      <div class="modal-body bg-dark">
-        <h1><span id="winner"></span></h1>
-         <img id="trophy" src="img/winner.png" alt="Trophée">
-      </div>
-      <div class="modal-footer bg-dark">
-        <button type="button" class="btn btn-secondary" id="change">Change Players</button>
-        <button type="button" class="btn btn-primary" id="playAgain">Play Again</button>
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-body text-center ">
+        <div class="card">
+          <div class="card-body bg-dark text-light">
+            <h1><span id="s1"></span>
+              <span> : </span>
+              <span id="s2"></span>
+            </h1>
+          </div>
+        </div>
+        <h1><span id="winner"></span></h1><br>
+         <img id="trophy" src="img/winner.png" alt="Trophée"><br>
+        <div class="mt-5 bg-dark">
+          <button type="button" class="btn btn-secondary" id="change" data-dismiss="modal">Change Players</button>
+          <button type="button" class="btn btn-primary" id="playAgain" data-dismiss="modal">Play Again</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

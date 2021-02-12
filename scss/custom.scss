@@ -85,7 +85,7 @@ body{
     @media only screen and (max-width: $mobile) {
         font-size: $circleFontSizeS;
      }
-     @media only screen and (max-width: $medium) {
+    @media only screen and (max-width: $medium) {
          font-size: $circleFontSizeM;
      }
 }
@@ -93,5 +93,8 @@ body{
     height: 20px;
 }
 #trophy{
-    width: 10vw;
+    width: 20vw;
+    @media only screen and (max-width: $mobile) {
+        width: 40vw;
+    }
 }
