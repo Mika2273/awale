@@ -21,7 +21,7 @@ export function addScore1(advancedCircleNum){
 		advancedCircleNum--;
   }
 	if(starved(1)==false){
-		if (total()>40){
+		if (total()>3){
 			hoverOff('player1');
 			hoverOn('player2');
 			let players2 = document.getElementsByClassName('player2') 
