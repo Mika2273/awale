@@ -30,3 +30,20 @@ $('#inputModal').on('click','#start', function (e) {
   }
   start();
 });
+
+$('#inputModal').on('click','#rules', function (e) {
+  $(document).ready(function(){
+    $("#rulesModal").modal('show');
+  });  
+  $('#rulesModal').modal({
+    backdrop: 'static',
+    keyboard: false  // to prevent closing with Esc button (if you want this too)
+  });
+  
+});
+
+$('#rulesModal').on('click','#ok', function (e) {
+  $(document).ready(function(){
+    $("#inputModal").modal('show');
+  });  
+});

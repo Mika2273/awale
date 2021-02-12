@@ -63,11 +63,55 @@
 						<p>Player Name 2</p>
 							<input type="text" class="form-control" id="player2">
 					</div>
-					<button type="button" class="btn btn-secondary" id="rule" class="close" data-dismiss="modal">The Rules</button>
-					<button type="button" class="btn btn-primary" id="start" class="close" data-dismiss="modal">Start</button>
+					<button type="button" class="btn btn-secondary" id="rules" class="close" data-dismiss="modal">The Rules</button>
+					<button type="button" class="btn btn-primary px-5" id="start" class="close" data-dismiss="modal">Start</button>
 			</form>
 			</div>
 		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+				<h5 class="mb-4  text-center">The rules of Awalé</h5>
+      </div>
+			<div class="modal-body">
+        <p>
+            The rules of Awalé are very simple, and the game is easy to understand. On the other hand, the strategies to be successful can be complex and subtle.<br><br>
+
+            <span class="text-info">Rule 1 : Aim of the game</span><br>
+            The aim of the game is to capture more seeds than your opponent. At the end of the game, the player who has captured the most seeds wins.<br><br>
+
+            <span class="text-info">Rule 2 : The board</span><br>
+            The board is divided into two areas, hollowed with six holes each.<br>
+            At the beginning, 48 seeds are distributed among the 12 holes (four seeds in each hole).<br><br>
+
+            <span class="text-info">Rule 3 : The game turn.</span><br>
+            Every player plays alternately, the first one to play is who is in the red color area.<br>
+            The player takes all the seeds in a hole of his area and distributes them counterclockwise, one in each hole.<br><br>
+
+            <span class="text-info">Rule 4 : Capture</span><br>
+            If the last seed to be distributed falls into one of the opponent's holes, containing already one or two seeds, the player captures the two or three seeds.<br>
+            The captured seeds are taken off the board (the hole is left empty) and counted into the player's score.<br><br>
+
+            <span class="text-info">Rule 5: Multiple capture</span><br>
+            If a player captures two or three seeds, and the preceding hole also contains two or three seeds, they are captured too, and so on...<br><br>
+
+            <span class="text-info">Rule 6: Feed the opponent</span><br>
+            A player isn't allowed to "starve" his opponent :<br>
+            a player can't play a hole that leads to capturing all the seeds in his opponent's area.<br><br>
+
+            <span class="text-info">Rule 7: End of the game</span><br>
+            The game ends if :<br>
+            - The total number of seeds is 3 or less.<br>
+            - The player with the highest number of seeds wins.</p>
+      </div>
+      <div class="my-3 text-center">
+			  <button type="button" class="btn btn-primary px-5" id="ok" class="close" data-dismiss="modal">OK</button>	
+      </div>
+    </div>
 	</div>
 </div>
 
@@ -87,7 +131,7 @@
          <img id="trophy" src="img/winner.png" alt="Trophée"><br>
         <div class="mt-5 bg-dark">
           <button type="button" class="btn btn-secondary" id="change" data-dismiss="modal">Change Players</button>
-          <button type="button" class="btn btn-primary" id="playAgain" data-dismiss="modal">Play Again</button>
+          <button type="button" class="btn btn-primary px-5" id="playAgain" data-dismiss="modal">Play Again</button>
         </div>
       </div>
     </div>
