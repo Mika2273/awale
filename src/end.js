@@ -3,20 +3,19 @@ import { start } from './start.js';
 export function end(){
 	let score1 = document.getElementById(`score1`).textContent;
 	let score2 = document.getElementById(`score2`).textContent;
-	
 	document.getElementById(`s1`).innerHTML = score1;
 	document.getElementById(`s2`).innerHTML = score2;
 		
-	if(score1 > score2){
-		let name = document.getElementById(`name1`).textContent
-		let nameA = name.replace(":","");
-		document.getElementById(`winner`).innerHTML = `${nameA} wins!`;
-	}else if(score1 === score2){
+	if(Number(score1) > Number(score2)){
+		let name1 = document.getElementById(`name1`).textContent
+		let name1A = name1.replace(":","");
+		document.getElementById(`winner`).innerHTML = `${name1A} wins!`;
+	}else if(Number(score1) === Number(score2)){
 		document.getElementById(`winner`).innerHTML = `draw`;
 	}else{
-		let name = document.getElementById(`name2`).textContent
-		let nameA = name.replace(":","");
-		document.getElementById(`winner`).innerHTML = `${nameA} wins!`;
+		let name2 = document.getElementById(`name2`).textContent
+		let name2A = name2.replace(":","");
+		document.getElementById(`winner`).innerHTML = `${name2A} wins!`;
 	}
 	$(document).ready(function(){
 		$("#endModal").modal('show');
