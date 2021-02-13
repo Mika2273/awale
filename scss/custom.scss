@@ -1,16 +1,21 @@
-// @import "~bootstrap/scss/bootstrap";
+
+// $primary:       #007bff !default;
+// $secondary:     #6c757d !default;
+// $info:          #17a2b8 !default;
+// $dark:          #343a40 !default;
+// $light:         #f8f9fa !default;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// @import "~bootstrap/scss/bootstrap";
 
 $primary_1: #ecf2f3;
 $primary_2: #0f0e01;
-$danger:rgba(228, 13, 13, 0.918);
 $myFont: Helvetica, sans-serif;
 $circleSize:10vw;
 $circleBorderColor:rgb(255, 255, 255);
 $circleFontSizeL: 5rem;
 $circleFontSizeM: 4rem;
-$circleFontSizeS: 1rem;
+$circleFontSizeS: 2rem;
 $mobile: 768px;
 $medium:1200px;
 $bg:url("../img/brick.jpg");
@@ -18,7 +23,7 @@ $bgCirclePath1:url("../img/blue.jpg");
 $bgCirclePath2:url("../img/red.jpg");
 body{
     background-image: $bg;
-    color: $primary_1 ;
+    // color: $primary_1 ;
 }
 .containerS{
     width: 30vw;
@@ -26,7 +31,6 @@ body{
     @media only screen and (max-width: $mobile) {
         width: 80vw;
      }
-
 }
 .title{
     background-color: $primary_2;
@@ -45,10 +49,11 @@ body{
 }
 .player1, .player2{
     @media only screen and (max-width: $mobile) {
+        padding: 10px 0;
         font-size: $circleFontSizeS;
      }
-    @media only screen and (max-width: $medium) {
-         font-size: $circleFontSizeM;
+    @media only screen and (min-width: $mobile) and(max-width: $medium) {
+        font-size: $circleFontSizeM;
      }
 }
 .player1_on{
@@ -80,14 +85,6 @@ body{
     .circle{
        background-image: $bgCirclePath2;
     }
-}
-.player1{
-    @media only screen and (max-width: $mobile) {
-        font-size: $circleFontSizeS;
-     }
-    @media only screen and (max-width: $medium) {
-         font-size: $circleFontSizeM;
-     }
 }
 .space{
     height: 20px;
