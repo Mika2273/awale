@@ -57,13 +57,13 @@
 				<form>
 					<div class="form-group">
 						<p>Player Name 1</p>
-							<input type="text" class="form-control" id="player1">
+							<input type="text" class="form-control" id="player1" maxlength="15">
 					</div>
 					<div class="form-group">
 						<p>Player Name 2</p>
-							<input type="text" class="form-control" id="player2">
+							<input type="text" class="form-control" id="player2" maxlength="15">
 					</div>
-					<button type="button" class="btn btn-primary" id="rules" class="close" data-dismiss="modal">The Rules</button>
+					<button type="button" class="btn btn-primary "  id="rules" class="close" data-dismiss="modal">The Rules</button>
 					<button type="button" class="btn btn-success px-5" id="start" class="close" data-dismiss="modal">Start</button>
 			</form>
 			</div>
@@ -76,6 +76,9 @@
 		<div class="modal-content bg-dark text-light">
       <div class="modal-header">
 				<h5 class="mb-4  text-center">The rules of Awalé</h5>
+        <div>
+          <button type="button" class="btn btn-outline-light px-4" id="jp" class="close" data-dismiss="modal">日本語</button>	
+        </div>  
       </div>
 			<div class="modal-body">
         <p>
@@ -106,7 +109,53 @@
             <span class="text-info">Rule 7: End of the game</span><br>
             The game ends if :<br>
             - The total number of seeds is 3 or less.<br>
+            - There are no seeds left in the player's area after making the last turn.<br>
             - The player with the highest number of seeds wins.</p>
+      </div>
+      <div class="my-3 text-center">
+			  <button type="button" class="btn btn-primary px-5" id="ok" class="close" data-dismiss="modal">OK</button>	
+      </div>
+    </div>
+	</div>
+</div>
+
+<div class="modal fade" id="jpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+				<h5 class="mb-4  text-center">アフリカの伝統ゲーム　アワレ</h5>
+        <div>
+          <button type="button" class="btn btn-outline-light px-2" id="en" class="close" data-dismiss="modal">English</button>	
+        </div>  
+      </div>
+			<div class="modal-body">
+        <p>
+          シンプルゆえに奥深い戦略ゲーム
+          <br><br>
+
+            <span class="text-info">1：目的</span><br>
+              対戦相手よりも多くのシードを獲得することです。ゲーム終了時に、最も多くのシードを獲得したプレイヤーが勝ちです。<br><br>
+
+            <span class="text-info">2：ゲーム構成</span><br>
+            ゲームボードは2つの領域に分割され、それぞれ6つのホールがあり、各ホールには４つのシードが配置されています。<br><br>
+
+            <span class="text-info">3：ターン</span><br>
+            各プレイヤーは交互にプレイします。初回ターンは、赤色ホール側のプレイヤーです。
+プレイヤーは自分のエリア内の１つのホールを選択し、その中のすべてのシードを取り、各ホールに1つずつ反時計回りに分配します。<br><br>
+
+            <span class="text-info">4：キャプチャ</span><br>
+            配布される最後のシードが、すでに1つまたは2つのシードを含む、対戦相手のホールに落ちた場合、プレーヤーは2つまたは3つのシードをキャプチャします。
+捕獲されたシードはボードから取り出され（ホールは０になります）、プレーヤーのスコアにカウントされます。<br><br>
+
+            <span class="text-info">5：複数のキャプチャ</span><br>
+            プレイヤーが2つまたは3つのシードをキャプチャし、前のホールにも2つまたは3つのシードが含まれている場合、それらもキャプチャされます。<br><br>
+
+            <span class="text-info">6：対戦相手のシード数を０にする</span><br>
+            プレイヤーは、対戦相手のエリアにあるすべてのシードをキャプチャすることにつながるホールをプレイすることはできません。<br><br>
+
+            <span class="text-info">7：ゲームの終了</span><br>
+            ボード全体のシード数が３以下になった場合、または自分のエリア内のシード数が０になった場合、ゲームは終了します。
+シード数が最も多いプレイヤーが勝ちです。</p>
       </div>
       <div class="my-3 text-center">
 			  <button type="button" class="btn btn-primary px-5" id="ok" class="close" data-dismiss="modal">OK</button>	

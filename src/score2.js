@@ -1,6 +1,6 @@
 import { click } from './click.js';
 import { hoverOn, hoverOff } from './hoverCntl.js';
-import { backUp, starved, total } from './starved.js';
+import { backUp, starved, totalTray, total } from './starved.js';
 import { end } from './end.js';
 
 export function addScore2(advancedCircleNum){
@@ -21,7 +21,7 @@ export function addScore2(advancedCircleNum){
     advancedCircleNum--;  
   }
 	if(starved(2)==false){
-    if (total()>42){
+    if (total()>3 && totalTray(2)>0){
       hoverOn('player1'); 
       hoverOff('player2');
       let players1 = document.getElementsByClassName('player1') 

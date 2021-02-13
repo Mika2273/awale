@@ -23,7 +23,7 @@ $('#inputModal').on('click','#start', function (e) {
   }else{
     document.getElementById("name1").innerHTML ="Player1 : ";
   }
-	if(p1 !==""){
+	if(p2 !==""){
     document.getElementById("name2").innerHTML =`${p2} : `;
   }else{
     document.getElementById("name2").innerHTML ="Player2 : ";
@@ -34,15 +34,37 @@ $('#inputModal').on('click','#start', function (e) {
 $('#inputModal').on('click','#rules', function (e) {
   $(document).ready(function(){
     $("#rulesModal").modal('show');
-  });  
-  $('#rulesModal').modal({
-    backdrop: 'static',
-    keyboard: false  // to prevent closing with Esc button (if you want this too)
-  });
-  
+    $('#rulesModal').modal({
+    	backdrop: 'static',
+    	keyboard: false  // to prevent closing with Esc button (if you want this too)
+  	});  
+	});
 });
+$('#rulesModal').on('click','#jp', function (e) {
+	$(document).ready(function(){
+		$("#jpModal").modal('show');
+		$('#jpModal').modal({
+			backdrop: 'static',
+			keyboard: false  // to prevent closing with Esc button (if you want this too)
+		});
+	});  	
+}); 
+$('#jpModal').on('click','#en', function (e) {
+	$(document).ready(function(){
+		$("#rulesModal").modal('show');
+		$('#rulesModal').modal({
+			backdrop: 'static',
+			keyboard: false  // to prevent closing with Esc button (if you want this too)
+		});
+	});  	
+}); 
 
 $('#rulesModal').on('click','#ok', function (e) {
+  $(document).ready(function(){
+    $("#inputModal").modal('show');
+  });  
+});
+$('#jpModal').on('click','#ok', function (e) {
   $(document).ready(function(){
     $("#inputModal").modal('show');
   });  

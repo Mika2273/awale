@@ -63,7 +63,7 @@ export function end(){
 		}else{
 			document.getElementById("name1").innerHTML ="Player1: ";
 		}
-		if(p1 !==""){
+		if(p2 !==""){
 			document.getElementById("name2").innerHTML =`${p2}: `;
 		}else{
 			document.getElementById("name2").innerHTML ="Player2: ";
