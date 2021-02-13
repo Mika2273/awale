@@ -19,14 +19,14 @@ $('#inputModal').on('click','#start', function (e) {
 	let p2 = $('#player2').val();
 
 	if(p1 !==""){
-    document.getElementById("name1").innerHTML = `${p1}: `;
+    document.getElementById("name1").innerHTML = `${p1} : `;
   }else{
-    document.getElementById("name1").innerHTML ="Player1: ";
+    document.getElementById("name1").innerHTML ="Player1 : ";
   }
 	if(p1 !==""){
-    document.getElementById("name2").innerHTML =`${p2}: `;
+    document.getElementById("name2").innerHTML =`${p2} : `;
   }else{
-    document.getElementById("name2").innerHTML ="Player2: ";
+    document.getElementById("name2").innerHTML ="Player2 : ";
   }
   start();
 });

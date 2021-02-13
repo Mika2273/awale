@@ -1,16 +1,14 @@
 
-// $primary:       #007bff !default;
-// $secondary:     #6c757d !default;
-// $info:          #17a2b8 !default;
-// $dark:          #343a40 !default;
-// $light:         #f8f9fa !default;
-@import "../node_modules/bootstrap/scss/bootstrap";
+$primary:       #007bff !default;
+$secondary:     #6c757d !default;
+$info:          #17a2b8 !default;
+$dark:          #343a40 !default;
+$light:         #f8f9fa !default;
+$success:       #2bc950 !default;
+// @import "../node_modules/bootstrap/scss/bootstrap";
 
-// @import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
-$primary_1: #ecf2f3;
-$primary_2: #0f0e01;
-$myFont: Helvetica, sans-serif;
 $circleSize:10vw;
 $circleBorderColor:rgb(255, 255, 255);
 $circleFontSizeL: 5rem;
@@ -23,7 +21,6 @@ $bgCirclePath1:url("../img/blue.jpg");
 $bgCirclePath2:url("../img/red.jpg");
 body{
     background-image: $bg;
-    // color: $primary_1 ;
 }
 .containerS{
     width: 30vw;
@@ -33,7 +30,7 @@ body{
      }
 }
 .title{
-    background-color: $primary_2;
+    background-color: $black;
     border-radius: 10px; 
 }
 .circle{
@@ -68,7 +65,7 @@ body{
 }
 .player2_on{
     &:hover {
-        border: 5px solid $circleBorderColor;
+        border: 5px solid $gray-100;
     }
 }
 .player2_off{
