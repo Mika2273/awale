@@ -1,24 +1,16 @@
-
-$primary:       #007bff !default;
-$secondary:     #6c757d !default;
-$info:          #17a2b8 !default;
-$dark:          #343a40 !default;
-$light:         #f8f9fa !default;
 $success:       #2bc950 !default;
-// @import "../node_modules/bootstrap/scss/bootstrap";
 
 @import "~bootstrap/scss/bootstrap";
 
 $circleSize:10vw;
-$circleBorderColor:rgb(255, 255, 255);
 $circleFontSizeL: 5rem;
 $circleFontSizeM: 4rem;
 $circleFontSizeS: 2rem;
 $mobile: 768px;
 $medium:1200px;
 $bg:url("../img/brick.jpg");
-$bgCirclePath1:url("../img/blue.jpg");
-$bgCirclePath2:url("../img/red.jpg");
+$bgCircle1:url("../img/blue.jpg");
+$bgCircle2:url("../img/red.jpg");
 body{
     background-image: $bg;
 }
@@ -55,7 +47,7 @@ body{
 }
 .player1_on{
     &:hover {
-        border: 5px solid $circleBorderColor;
+        border: 5px solid $white;
     }
 }
 .player1_off{
@@ -75,12 +67,12 @@ body{
 }
 .tray1{
     .circle{
-       background-image: $bgCirclePath1;
+       background-image: $bgCircle1;
     }
 }
 .tray2{
     .circle{
-       background-image: $bgCirclePath2;
+       background-image: $bgCircle2;
     }
 }
 .space{
